@@ -11,6 +11,7 @@ void parentesis(char *c){
 		}else if(c[i]==')'){
 			if(pa>pc){
 				pc++;
+				i++;
 			}else{
 				cout<<"esta mal";
 				break;
@@ -30,6 +31,7 @@ void parentesis(char *c){
 
 int main(){
 	char c[50];
+	cout<<"Ingrese la cadena"<<endl;
 	cin.getline(c, 50);
 	parentesis(c);
 	return 0;
