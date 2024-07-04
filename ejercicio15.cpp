@@ -13,8 +13,7 @@ int str_cmp(char *str1,char *str2){
 			break;
 		}else{
 			cmp=0;
-			break;
-	}
+		}
 	return cmp;
 }
 
